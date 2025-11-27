@@ -1,6 +1,6 @@
 # mini-rag-app
 
-RAG est l'acronyme de Retrieval-Augmented Generation, un cadre d'IA qui combine les grands modèles de langage (LLM) avec un système de recherche pour fournir des réponses plus précises et contextuelles
+RAG : Retrieval-Augmented Generation
 
 ## Requirements
 
@@ -42,3 +42,9 @@ $ cp .env.example .env
 ```
 
 Set your environment variables in the `.env` file. Like `OPENAI_API_KEY` value.
+
+## Run the FastAPI server
+
+```bash
+$ uvicorn main:app --reload --host 0.0.0.0 --port 5000
+```
